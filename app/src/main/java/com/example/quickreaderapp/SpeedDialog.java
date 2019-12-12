@@ -13,10 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
+// this class provides the functionality to alter the read speed of the app via a pop-up window
 public class SpeedDialog extends AppCompatDialogFragment {
     private EditText editTextSpeed;
     private SpeedDialogListner listner;
 
+    // creates a dialog instance with buttons and text
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class SpeedDialog extends AppCompatDialogFragment {
         return builder.create();
     }
 
+    //
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
